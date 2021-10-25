@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Write HTML input tags snippet to show default values for all Form
+      elements.
+    </title>
+  </head>
+  <body>
+    <form action="">
+      <!--<input> -->
+      <label for="fname">First name:</label>
+      <input
+        type="text"
+        id="fname"
+        name="fname"
+        placeholder="Enter your name"
+      />
+
+      <!-- <select> -->
+      <label for="cars">Cars:</label>
+      <select id="cars">
+        <option selected>Select one below</option>
+        <option>Volvo</option>
+        <option>Skoda</option>
+        <option>BMW</option>
+        <option>Audi</option>
+      </select>
+
+      <!-- <textarea> -->
+      <textarea
+        name="comments"
+        id=""
+        cols="30"
+        rows="10"
+        placeholder="Enter your comments here..."
+      ></textarea>
+
+      <!-- <button> -->
+      <button type="button" onclick="alert('Welcome Here!!!')">
+        Click me!
+      </button>
+
+      <!-- <fieldset>  & <legend> -->
+      <fieldset>
+        <legend>Data:</legend>
+        <label for="fname">First name:</label><br />
+        <input type="text" id="fname" value="Hello" /><br />
+        <label for="lname">Last name:</label><br />
+        <input type="text" id="lname" value="Guvi!!!" /><br /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
+
+      <!-- <datalist> &  <option> -->
+
+      <input list="browsers" name="browser" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Chrome"></option>
+        <option value="Firefox"></option>
+        <option value="Safari"></option>
+        <option value="DuckDuckGo"></option>
+        <option value="Baidu"></option>
+      </datalist>
+
+      <!-- <output> -->
+      <form oninput="x.value = parseInt(a.value) + parseInt( b.value)">
+        <input type="number" id="a" value="0" />+
+        <input type="number" id="b" value="0" /> =
+        <output name="x" for="a b"></output>
+      </form>
+
+      <!-- <optgroup> -->
+      <label for="cars">Cars:</label>
+      <select id="cars">
+        <option selected>Select one below</option>
+        <optgroup label="Medium Range">
+          <option>Volvo</option>
+          <option>Skoda</option>
+        </optgroup>
+        <optgroup label="High Range">
+          <option>BMW</option>
+          <option>Audi</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
